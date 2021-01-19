@@ -4,7 +4,8 @@ public class NoRegex {
     public boolean isValidSPZ(String spz){
 
         spz = spz.toUpperCase();
-        if(spz.length()!=7){	
+        if(spz.length()!=7){
+
             return false;
         }
         if(spz.charAt(0) < 65 || spz.charAt(0) > 90){
@@ -15,6 +16,7 @@ public class NoRegex {
         }
         return true;
     }
+
     public boolean isValidOP(String text){
         if(text==null)
             return false;
@@ -34,4 +36,5 @@ public class NoRegex {
 
         return true;
     }
+
 }
